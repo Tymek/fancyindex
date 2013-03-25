@@ -6,8 +6,6 @@
 	<link rel="shortcut icon" href="/favicon.ico" />
 	<link rel="stylesheet" href="/fancyindex/css/style.css">
 	<script type="text/javascript" src="/fancyindex/js/jquery-1.7.1.min.js"></script>
-</head>
-<body>
 	<script type="text/javascript">
 	$(document).ready(function(){
 		var location = document.location.pathname;
@@ -17,13 +15,12 @@
 		var domain = document.domain;
 		for (var i=0; i<segments.length; i++) {
 			if (segments[i] != '') {
-			currentPath += segments[i] + '/';
-			breadcrumbs += '<a href="' +  currentPath + '">' + segments[i] + '</a>/';
+				currentPath += segments[i] + '/';
+				breadcrumbs += '<a href="' +  currentPath + '">' + segments[i] + '</a>/&shy;';
+			}
 		}
-		}
-		//$("#domain").html('<a href="'+domain+'">'+domain+'</a>');
-		$("#domain").text(domain);
-		$('#path').html(breadcrumbs);
+		$("#domain").find('span').text(domain);
+		$('#path').append(breadcrumbs);
 		$("#footer").find("span").find("a").text(domain);
 		$("#footer").find("span").append(breadcrumbs);
 		$('hr').parent().remove();
@@ -35,11 +32,13 @@
 		$(columns[columns.length-2]).addClass('date');
 		$('#refresh > a').click(function(){window.location.reload(true);return false;});
 		$('td[align="right"]').addClass('smaller');
-		$('.smaller:even').addClass('even');
+		//$('.smaller:even').addClass('even');
 		$("tr:odd").addClass("odd");
-		$('[alt="[DIR]"]').parent().add('#path a, #home a, #up a').add($('[alt="[DIR]"]').parent().parent().next().children('a')).attr("href", function(i, href) { return href.indexOf('?') === -1 ? href + document.location.search : href; });
+		$('[alt="[DIR]"]').parent().add('#path a, #up a').add($('[alt="[DIR]"]').parent().parent().next().children('a')).attr("href", function(i, href) { return href.indexOf('?') === -1 ? href + document.location.search : href; });
 	});
 	</script>
+</head>
+<body>
 	<script type="text/javascript">
 		function CloseWithWindowOpenTrick(){
 			var objWindow = window.open(location.href, "_self");
@@ -47,11 +46,16 @@
 		}
 	</script>
 	<div id="container">
-		<div id="header">
-			<a href="/"><img src="/fancyindex/icons/file_server.png"><span id="domain"></span></a>
-			<span id="path"></span>
-			<div class="navicons" id="close"><a href="#" onclick="CloseWithWindowOpenTrick();"><img src="/fancyindex/icons/cross.png"/></a></div>
-			<div class="navicons" id="refresh"><a href="#"><img src="/fancyindex/icons/arrow-circle-315.png"/></a></div>
-			<div class="navicons" id="up"><a href="../"><img src="/fancyindex/icons/arrow-090.png"/></a></div>
-		</div>
-		<div id="files">
+		<nav id="header" class="clearfix">
+			<div class="left" id="path">
+				<a href="/" id="domain">
+					<img src="/fancyindex/icons/file_server.png"><span></span>
+				</a>
+			</div>
+			<div class="right">
+				<div class="navicons" id="close"><a href="#" onclick="CloseWithWindowOpenTrick();"><img src="/fancyindex/icons/cross.png"/></a></div>
+				<div class="navicons" id="refresh"><a href="#"><img src="/fancyindex/icons/arrow-circle-315.png"/></a></div>
+				<div class="navicons" id="up"><a href="../"><img src="/fancyindex/icons/arrow-090.png"/></a></div>
+			</div>
+		</nav>
+		<section id="files">
