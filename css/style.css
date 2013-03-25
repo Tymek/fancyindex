@@ -1,0 +1,148 @@
+* {
+	font-family:FreeMono,Consolas,'Courier New',monospace;
+    font-size: 0.964em;
+}
+body {
+    background-color: #edeae1;
+    text-align: center;
+	padding:0;
+	margin:0;
+}
+img {
+    border: 0;
+}
+a, a:visited {
+    color: #4d4d4d;
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+
+.date {
+    text-align: right;
+	width: 33%;
+}
+@media only screen and (max-width: 800px){
+	#footer span {
+		display: none;
+	}
+}
+@media only screen and (max-width: 392px){
+	#files tr td img {
+		padding-top: 4px;
+	}
+}
+@media only screen and (max-width: 330px){
+	.date, .even {
+		display: none;
+	}
+}
+.icon {
+    width: 25px;
+}
+.name {
+    text-align: left;
+}
+.size {
+    text-align: right;
+}
+.smaller {
+    color: #777777;
+    padding-right: 4px;
+}
+.odd {
+	background: #f0f0f0;
+}
+
+#files {
+	padding: 20px 8px 0 8px;
+}
+#files table {
+    margin: 0 auto;
+    max-width: 800px;
+    width: 100%;
+    background-color: #fafafa;
+    border: #d6d4cf 1px solid;
+	border-bottom:none;
+	border-collapse: collapse;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+tr:first-child{
+	background: #fff;
+}
+#files tr td img {
+    padding-left: 4px
+}
+#files tbody {
+    text-align: left;
+    width: 100%;
+	padding-bottom: 3px;
+}
+#files td {
+	height: 20px;
+}
+#files a {
+	position: relative;
+}
+#files a img {
+	position: inherit;
+	top: 1px;
+}
+#footer {
+	margin: 0 8px;
+}
+#footer .wrap {
+    max-width: 794px;
+    margin: 0 auto;
+    color: #b9b7b3;
+    padding: 3px;
+	opacity: 0.66;
+	border-top: #d6d4cf 1px solid;
+}
+#footer a {
+	color: #b9b7b3;
+}
+#footer a:hover {
+    color: #4d4d4d;
+}
+#footer .left {
+	display: block;
+	float: left;
+	text-align: left;
+	padding-left: 3px;
+}
+#footer .right {
+	display: block;
+	float: right;
+    text-align: right;
+	padding-right: 3px;
+}
+#footer span {
+	opacity: 0.75;
+}
+
+#header {
+    background-color: #6f6d68;
+    background-color: #444;
+    border: #565550 1px solid;
+    color: #e4e2dd;
+    line-height: 30px;
+    text-align: left;
+}
+#header img {
+    padding: 0 8px 0 8px;
+    position: relative;
+    top: 3px;
+}
+#header a {color: #bbb}
+#header a:hover {color: #fff}
+#domain {color: #eee}
+
+.navicons {
+	padding-top: 3px;
+	margin-left: -4px;
+	float: right;
+}
