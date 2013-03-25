@@ -1,17 +1,17 @@
-# APACHE AUTOINDEX THEME
+# FancyIndex
 
-Theme for Apache directory & file listings.
+Fancy (and a little bit responsive) theme for Apache directory & file listings.
 
 ## Installation
 
-Get a copy of theme folder. Then use [vhost.conf example](https://github.com/fuchcz/apache-autoindex-theme/blob/master/vhost.conf) to either modify Apache virtual configuration starting with setting correct path in 'autoindex' alias, or replace every path (even in `header.html`) and use it in `.htaccess` file.
-
-## Screenshot
-
-[Screenshot](http://fuch.cz/images/apache-autoindex-theme-screenshot1.jpg).
+Customize httpd-autoindex.conf and replace with that in "[apache dir]\conf\extra\".
+Don't worry about backup if you have "conf\original\extra" files.
+Make sure if mod_autoindex is on.
+Restart server. Works for me ;)
 
 ## Footnotes
 
+Strongly based on [apache-autoindex-theme](https://github.com/fuchcz/apache-autoindex-theme).
 Icons by [Yusuke Kamiyamane](http://p.yusukekamiyamane.com/). All rights reserved. Licensed under a Creative Commons Attribution 3.0 License.
 
-Inspired by [mabishu-apache-autoindex](https://github.com/frandieguez/mabishu-apache-autoindex).
+Feel free to modify.
