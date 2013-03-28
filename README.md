@@ -10,11 +10,9 @@ Don't worry about backup if you have "conf\original\extra" files.
 Make sure if mod_autoindex is on.
 Restart server. Works for me ;)
 
-## Screenshots
+## Screenshot
 
-![Desktop](https://raw.github.com/Tymek/fancyindex/master/screenshots/desktop.png)
-![Mobile - landscape](https://raw.github.com/Tymek/fancyindex/master/screenshots/mobile-landscape.png)
-![Mobile](https://raw.github.com/Tymek/fancyindex/master/screenshots/mobile-portrait.png)
+![screenshot.png](https://raw.github.com/Tymek/fancyindex/master/screenshot.png)
 
 ## Footnotes
 
