@@ -103,8 +103,8 @@ a:hover {
 }
 #files table {
     margin: 0 auto;
-    max-width: 800px;
-    width: 100%;
+    width: 800px;
+    /*width: 100%;*/
     background-color: #fafafa;
     border: #d6d4cf 1px solid;
 	border-bottom:none;
@@ -177,6 +177,9 @@ tr:first-child{
 	}
 	#path {
 		padding-right: 8px;
+	}
+	#files table {
+		width: 100%;
 	}
 }
 @media only screen and (max-width: 392px){
