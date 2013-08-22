@@ -146,6 +146,9 @@ tr:first-child {
 	margin: 0px 5px;
 	text-align: left;
 }
+#footer section.center {
+    width: 75%;
+}
 #footer section.right {
 	float: right;
 	text-align: right;
@@ -158,6 +161,9 @@ tr:first-child {
 }
 
 @media only screen and (max-width: 767px) {
+	#footer section.center {
+		display: none;
+	}
 	#path a#domain {
 		display: block;
 	}
@@ -170,9 +176,6 @@ tr:first-child {
 	
 }
 @media only screen and (max-width: 767px) and (orientation: portrait) {
-	#footer section.center {
-		display: none;
-	}
 	#files {
 		padding-top: 8px;
 	}
