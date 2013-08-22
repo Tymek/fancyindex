@@ -13,7 +13,7 @@ Don't worry about backup, you should already have `/etc/apache2/original/`.
 ## Screenshot
 
 ![Picture of FancyIndex in action on a computer.](https://raw.github.com/mcdado/fancyindex/master/screenshot.jpg)  
-Thanks to [PlaceTt by breezi](http://placeit.breezi.com/) for the screenshot.
+Thanks to [PlaceIt by breezi](http://placeit.breezi.com/) for the screenshot.
 
 ![An iPhone screenshot of FancyIndex.](https://raw.github.com/mcdado/fancyindex/master/screenshot_iphone.jpg)  
 

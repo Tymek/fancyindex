@@ -92,8 +92,7 @@ a:hover {
 }
 #files table {
 	margin: 0 auto;
-	width: 800px;
-	/*width: 100%;*/
+	width: 753px;
 	background-color: #fafafa;
 	border: #d6d4cf 1px solid;
 	border-bottom: none;
@@ -114,21 +113,21 @@ tr:first-child {
 	padding-bottom: 3px;
 }
 #files td {
-	height: 20px;
+	height: 30px;
 }
 #files a {
 	position: relative;
 }
 #files a img {
 	position: inherit;
-	top: 1px;
+	top: 5px;
 }
 #footer {
 	margin: 0px 8px 15px;
 	padding-bottom: 8px;
 }
 #footer .wrap {
-	max-width: 794px;
+	max-width: 747px;
 	margin: 0 auto;
 	color: #b9b7b3;
 	padding: 3px;
@@ -141,26 +140,24 @@ tr:first-child {
 #footer a:hover {
 	color: #4d4d4d;
 }
-#footer .left {
+#footer section {
 	display: block;
 	float: left;
+	margin: 0px 5px;
 	text-align: left;
-	padding-left: 3px;
 }
-#footer .right {
-	display: block;
+#footer section.right {
 	float: right;
 	text-align: right;
-	padding-right: 3px;
 }
 #footer span {
 	opacity: 0.75;
 }
+#footer span:hover {
+	opacity: 1;
+}
 
-@media only screen and (max-width: 800px) {
-	#footer span {
-		display: none;
-	}
+@media only screen and (max-width: 767px) {
 	#path a#domain {
 		display: block;
 	}
@@ -170,9 +167,12 @@ tr:first-child {
 	#files table {
 		width: 100%;
 	}
-
+	
 }
-@media only screen and (max-width: 392px) {
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+	#footer section.center {
+		display: none;
+	}
 	#files {
 		padding-top: 8px;
 	}
