@@ -12,7 +12,7 @@ Don't worry about backup, you should already have it in `original/` folder.
 
 ## Screenshot
 
-![FancyIndex in action on a computer and smartphone.](https://raw.github.com/mcdado/fancyindex/master/screenshot.png)  
+![FancyIndex in action on a computer and smartphone.](https://raw.github.com/Tymek/fancyindex/master/screenshot.png)  
 
 ## TODO
 
